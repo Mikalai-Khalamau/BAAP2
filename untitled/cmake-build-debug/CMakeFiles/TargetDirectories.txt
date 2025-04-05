@@ -1,0 +1,3 @@
+/home/nikolay/BAAP 2 semester KHALAMAU 453503/untitled/cmake-build-debug/CMakeFiles/untitled.dir
+/home/nikolay/BAAP 2 semester KHALAMAU 453503/untitled/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/nikolay/BAAP 2 semester KHALAMAU 453503/untitled/cmake-build-debug/CMakeFiles/rebuild_cache.dir

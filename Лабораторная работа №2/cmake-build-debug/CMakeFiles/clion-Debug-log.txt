@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /home/nikolay/BAAP 2 semester KHALAMAU 453503/Лабораторная работа №2 Select CMakeLists.txt

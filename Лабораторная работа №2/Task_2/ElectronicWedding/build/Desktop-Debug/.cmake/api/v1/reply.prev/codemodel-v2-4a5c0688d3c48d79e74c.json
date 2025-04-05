@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-9f4c0ed83cf108a1ec3e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ElectronicWedding",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ElectronicWedding::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ElectronicWedding-Debug-939a0c0a011d2eeb045e.json",
+					"name" : "ElectronicWedding",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ElectronicWedding_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ElectronicWedding_autogen-Debug-c1de2bf00cf65598b7b6.json",
+					"name" : "ElectronicWedding_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ElectronicWedding_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ElectronicWedding_autogen_timestamp_deps-Debug-a6f8eca40b0ec6ae53e0.json",
+					"name" : "ElectronicWedding_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/nikolay/BAAP 2 semester KHALAMAU 453503/\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430 \u21162/Task_2/ElectronicWedding/build/Desktop-Debug",
+		"source" : "/home/nikolay/BAAP 2 semester KHALAMAU 453503/\u041b\u0430\u0431\u043e\u0440\u0430\u0442\u043e\u0440\u043d\u0430\u044f \u0440\u0430\u0431\u043e\u0442\u0430 \u21162/Task_2/ElectronicWedding"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

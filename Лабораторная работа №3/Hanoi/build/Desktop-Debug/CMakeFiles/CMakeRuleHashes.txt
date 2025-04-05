@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+4ccb5bfc80f71e15bcabd368f360815d CMakeFiles/Hanoi_autogen
+4ccb5bfc80f71e15bcabd368f360815d CMakeFiles/Hanoi_autogen_timestamp_deps
+924c82dc12a3331379a217ddb317be78 Hanoi_autogen/timestamp

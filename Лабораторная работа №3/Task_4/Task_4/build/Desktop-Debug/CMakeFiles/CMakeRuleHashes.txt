@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+a7e3cc963326b41502cf8b20e49f80a2 CMakeFiles/Task_4_autogen
+a7e3cc963326b41502cf8b20e49f80a2 CMakeFiles/Task_4_autogen_timestamp_deps
+1f26252807730a7033b634e20dc275d7 Task_4_autogen/timestamp
