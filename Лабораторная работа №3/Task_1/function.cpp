@@ -7,8 +7,6 @@ const int k20=20;
 Function::Function() {}
 
 QString Function::translate(double a) {
-    // Обработка нуля
-
 
     if (a == 0.0) {
         return "0";
@@ -26,7 +24,6 @@ QString Function::translate(double a) {
 
     // Дробная часть
     double frac_part = a - int_part;
-
 
     if (frac_part != 0.0) {
         result += ".";

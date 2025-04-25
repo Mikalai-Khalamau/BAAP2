@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/Dops.dir/main.cpp.o CMakeFiles/Dops.dir/Task_4.cpp.o CMakeFiles/Dops.dir/yandex.cpp.o -o Dops

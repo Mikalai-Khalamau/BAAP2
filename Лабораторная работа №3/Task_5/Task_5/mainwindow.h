@@ -27,15 +27,15 @@ public:
 private slots:
     void openDirectory();
     void openFile(const QModelIndex &index);
-    void checkWithFind(const QString& path);
+
 private:
     QFileSystemModel *model_;
     FileCounter fileCounter_;
 
-    // Виджеты
     QTreeView *treeView_;
     QTextEdit *textEdit_;
     QLabel *statusLabel_;
+    QLabel *infoLabel_;
     QPushButton *openButton_;
 
     void setupUI();

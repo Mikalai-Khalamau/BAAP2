@@ -7,15 +7,21 @@
 #include <QMessageBox>
 #include <QProcess>
 
+const int k600=600;
+const int k1000=1000;
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
     model_(new QFileSystemModel(this)),
     treeView_(new QTreeView(this)),
     textEdit_(new QTextEdit(this)),
     statusLabel_(new QLabel(this)),
+    infoLabel_(new QLabel(this)),
     openButton_(new QPushButton(this))
 {
     setupUI();
+
+    resize(k1000, k600);
 }
 
 void MainWindow::setupUI()
@@ -36,6 +42,10 @@ void MainWindow::setupUI()
     // Настройка метки статуса
     statusLabel_->setText("Выберите начальную папку");
 
+    //Введите команды в терминал для проверки
+    // find . -type f | wc -l количество папок
+    // expr $(find . -type d | wc -l) - 1 количество файлов
+
     // Создаем разделитель
     QSplitter *splitter = new QSplitter(Qt::Horizontal, this);
     splitter->addWidget(treeView_);
@@ -50,7 +60,6 @@ void MainWindow::setupUI()
     top_layout->addWidget(openButton_);
     top_layout->addStretch();
     top_layout->addWidget(statusLabel_);
-
     main_layout->addLayout(top_layout);
     main_layout->addWidget(splitter);
 
@@ -77,7 +86,7 @@ void MainWindow::openDirectory()
         treeView_->setRootIndex(model_->index(dir));
 
         fileCounter_.count(dir);
-         checkWithFind(dir);
+
         statusLabel_->setText(
             QString("Папок: %1 | Файлов: %2 | Всего: %3")
                 .arg(fileCounter_.dirCount())
@@ -103,24 +112,4 @@ void MainWindow::openFile(const QModelIndex &index)
         }
     }
 }
-void MainWindow::checkWithFind(const QString& path)
-{
-    fileCounter_.count(path);
-    int our_files = fileCounter_.fileCount();
-    int our_dirs = fileCounter_.dirCount(); // не учитывает корень
 
-    QProcess p;
-    p.start("sh", QStringList() << "-c"
-                                << QString("find \"%1\" -type f | wc -l").arg(path));
-    p.waitForFinished();
-    int find_files = p.readAllStandardOutput().trimmed().toInt();
-
-    p.start("sh", QStringList() << "-c"
-                                << QString("find \"%1\" -type d | wc -l").arg(path));
-    p.waitForFinished();
-    int find_dirs = p.readAllStandardOutput().trimmed().toInt();
-
-    qDebug() << "Сравнение (исключая . и ..):";
-    qDebug() << "Файлы:" << "наш код =" << our_files << "| find =" << find_files;
-    qDebug() << "Папки:" << "наш код =" << our_dirs << "(+1 с корнем = " << (our_dirs + 1) << ") | find =" << find_dirs;
-}

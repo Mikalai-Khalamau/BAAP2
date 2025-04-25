@@ -23,7 +23,7 @@ void FileCounter::countRecursive(const QString& path) {
     }
 
     QFileInfoList entries = dir.entryInfoList(
-        QDir::NoDotAndDotDot | QDir::AllEntries, QDir::NoSort);
+    QDir::NoDotAndDotDot | QDir::AllEntries | QDir::Hidden, QDir::NoSort);
 
     for (const QFileInfo& entry : entries) {
         if (entry.isDir()) {

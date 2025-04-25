@@ -18,7 +18,7 @@ MainWindow::~MainWindow() {
 
 void MainWindow::onTranslateButtonClicked() {
     QString text_a = ui->lineEdit->text();
-    if (text_a.length() > k9) {
+    if (text_a.length() > 30) {
         ui->label->setText("Максимум 9 символов.");
         return;
     } else {

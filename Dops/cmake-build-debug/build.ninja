@@ -61,6 +61,12 @@ build CMakeFiles/Dops.dir/Task_4.cpp.o: CXX_COMPILER__Dops_unscanned_Debug /home
   OBJECT_DIR = CMakeFiles/Dops.dir
   OBJECT_FILE_DIR = CMakeFiles/Dops.dir
 
+build CMakeFiles/Dops.dir/yandex.cpp.o: CXX_COMPILER__Dops_unscanned_Debug /home/nikolay/BAAP$ 2$ semester$ KHALAMAU$ 453503/Dops/yandex.cpp || cmake_object_order_depends_target_Dops
+  DEP_FILE = CMakeFiles/Dops.dir/yandex.cpp.o.d
+  FLAGS = -g -std=gnu++20 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles/Dops.dir
+  OBJECT_FILE_DIR = CMakeFiles/Dops.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Dops
@@ -69,7 +75,7 @@ build CMakeFiles/Dops.dir/Task_4.cpp.o: CXX_COMPILER__Dops_unscanned_Debug /home
 #############################################
 # Link the executable Dops
 
-build Dops: CXX_EXECUTABLE_LINKER__Dops_Debug CMakeFiles/Dops.dir/main.cpp.o CMakeFiles/Dops.dir/Task_4.cpp.o
+build Dops: CXX_EXECUTABLE_LINKER__Dops_Debug CMakeFiles/Dops.dir/main.cpp.o CMakeFiles/Dops.dir/Task_4.cpp.o CMakeFiles/Dops.dir/yandex.cpp.o
   FLAGS = -g
   OBJECT_DIR = CMakeFiles/Dops.dir
   POST_BUILD = :

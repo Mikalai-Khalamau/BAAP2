@@ -70,7 +70,7 @@ void MainWindow::setupUI() {
     control_layout->addWidget(speedEdit_);
     control_layout->addWidget(initializeButton_);
     control_layout->addWidget(startButton_);
-    moveCounterLabel_ = new QLabel("Ходов: 0", this);  // Новый QLabel
+    moveCounterLabel_ = new QLabel("Ходов: 0", this);
     control_layout->addWidget(moveCounterLabel_);
 
     scene_ = new QGraphicsScene(this);
